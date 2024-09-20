@@ -9,4 +9,6 @@ COPY ./schedules /etc/periodic
 
 RUN mkdir /tmp/null
 
+ARG PORT=8085
+ENV PORT ${PORT}
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
