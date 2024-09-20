@@ -11,11 +11,11 @@ docker build --tag tdm-prototype-scheduler .
 Run:
 
 ```bash
-docker run tdm-prototype-scheduler
+docker run -p 8080:8080 tdm-prototype-scheduler
 ```
 
 Connect & poke around:
 
 ```bash
-docker run -it tdm-prototype-scheduler bash
+docker run --rm -it -p 8080:8080 --entrypoint ash tdm-prototype-scheduler
 ```
