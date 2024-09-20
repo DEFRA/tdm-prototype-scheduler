@@ -1,6 +1,6 @@
 ﻿FROM alpine:3.20 as rq-build
 
-RUN apk add --update supervisor vim
+RUN apk add --update supervisor vim curl
 RUN mkdir -p /var/log/supervisor
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
