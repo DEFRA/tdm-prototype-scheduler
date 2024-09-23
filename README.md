@@ -14,6 +14,12 @@ Run:
 docker run -p 8080:8080 tdm-prototype-scheduler
 ```
 
+Run, passing an API to connect to:
+
+```bash
+docker run -p 8080:8080 -e TDM_API=https://localhost:7094/ tdm-prototype-scheduler
+```
+
 Connect & poke around:
 
 ```bash
